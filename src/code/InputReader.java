@@ -47,6 +47,14 @@ public class InputReader {
         return in;
     }
 
+    public long[] nextLongArray(int s) {
+        long[] in = new long[s];
+        for (int i = 0; i < s; i++) {
+            in[i] = nextLong();
+        }
+        return in;
+    }
+
     public String nextLine() {
         try {
             return reader.readLine();

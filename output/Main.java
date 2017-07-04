@@ -27,23 +27,39 @@ public class Main {
     }
 
     static class Task {
+        private int n;
+        private int m;
+        private int[] coins;
+        private long[][] dp;
+
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            int n = in.nextInt();
-            long[] numbers = new long[n];
-            for (int i = 0; i < n; i++) {
-                numbers[i] = in.nextLong();
-            }
-            Arrays.sort(numbers);
-            long difference = Long.MAX_VALUE;
-            for (int i = 1; i < n; i++) {
-                difference = Math.min(difference, numbers[i] - numbers[i - 1]);
+            n = in.nextInt();
+            m = in.nextInt();
+            coins = in.nextIntArray(m);
+            dp = new long[n + 1][m];
+
+            for (int i = 0; i < dp.length; i++) {
+                Arrays.fill(dp[i], -1);
             }
 
-            for (int i = 1; i < n; i++) {
-                if (difference == numbers[i] - numbers[i - 1]) {
-                    out.print(numbers[i - 1] + " " + numbers[i] + " ");
-                }
+            out.print(getResult(0, 0));
+        }
+
+        private long getResult(int collected, int index) {
+            if (collected == n) {
+                return 1;
+            } else if (collected > n) {
+                return 0;
+            } else if (dp[collected][index] != -1) {
+                return dp[collected][index];
             }
+
+            long ways = 0;
+            for (int i = index; i < m; i++) {
+                ways += getResult(collected + coins[i], i);
+            }
+            dp[collected][index] = ways;
+            return ways;
         }
 
     }
@@ -72,8 +88,12 @@ public class Main {
             return Integer.parseInt(next());
         }
 
-        public long nextLong() {
-            return Long.parseLong(next());
+        public int[] nextIntArray(int s) {
+            int[] in = new int[s];
+            for (int i = 0; i < s; i++) {
+                in[i] = nextInt();
+            }
+            return in;
         }
 
     }
