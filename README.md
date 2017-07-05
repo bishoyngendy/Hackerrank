@@ -4,6 +4,8 @@
   1- Closest Numbers
 ### Implementation Challenges
   1- Apple and Orange
+### Bit Manipulation Challenges
+  1- Maximizing XOR
 ### Graph Theory Challenges
   1- Breadth First Search: Shortest Reach
 ### Greedy Challenges

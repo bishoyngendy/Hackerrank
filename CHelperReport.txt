@@ -1,2 +1,2 @@
-61 src/code/Algorithms/Implementation/Apple_and_Orange/Task.task
+61 src/code/Algorithms/Bit_Manipulation/Maximizing_XOR/Task.task
 0

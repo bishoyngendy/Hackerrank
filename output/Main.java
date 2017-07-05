@@ -27,28 +27,15 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            int s = in.nextInt();
-            int t = in.nextInt();
-            int a = in.nextInt();
-            int b = in.nextInt();
-            int m = in.nextInt();
-            int n = in.nextInt();
-            int apples = 0;
-            int oranges = 0;
-            for (int i = 0; i < m; i++) {
-                int x = in.nextInt();
-                if ((a + x >= s) && (a + x <= t)) {
-                    apples++;
+            int l = in.nextInt();
+            int r = in.nextInt();
+            long ret = Integer.MIN_VALUE;
+            for (int i = l; i <= r; i++) {
+                for (int j = i; j <= r; j++) {
+                    ret = Math.max(ret, i ^ j);
                 }
             }
-            for (int i = 0; i < n; i++) {
-                int x = in.nextInt();
-                if ((b + x >= s) && (b + x <= t)) {
-                    oranges++;
-                }
-            }
-            out.println(apples);
-            out.print(oranges);
+            out.print(ret);
         }
 
     }
