@@ -1,0 +1,31 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+11 5
+1 2 3 4 5
+1 1
+1
+1
+9 4
+1 2 3 4
+1 0
+1
+32 src/code/HourRank_22/Parity_Game
+16 -Xmx256m -Xss64m
+4 Main
+33 code.HourRank_22.Parity_Game.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.05
+11 Parity_Game
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1
