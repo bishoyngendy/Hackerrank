@@ -1,0 +1,31 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+33 1
+5
+ebacd
+fghij
+olmkn
+trpqs
+xywuv
+3 YES
+1
+41 src/code/Algorithms/Greedy/Grid_Challenge
+8 -Xmx256M
+4 Main
+42 code.Algorithms.Greedy.Grid_Challenge.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.05
+14 Grid Challenge
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

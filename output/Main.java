@@ -2,11 +2,9 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.io.IOException;
 import java.io.BufferedReader;
-import java.util.Collections;
 import java.io.InputStreamReader;
 import java.io.InputStream;
 
@@ -29,17 +27,28 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
+            int s = in.nextInt();
+            int t = in.nextInt();
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int m = in.nextInt();
             int n = in.nextInt();
-            Integer[] calories = new Integer[n];
-            for (int i = 0; i < n; i++) {
-                calories[i] = in.nextInt();
+            int apples = 0;
+            int oranges = 0;
+            for (int i = 0; i < m; i++) {
+                int x = in.nextInt();
+                if ((a + x >= s) && (a + x <= t)) {
+                    apples++;
+                }
             }
-            Arrays.sort(calories, Collections.reverseOrder());
-            long ret = 0;
             for (int i = 0; i < n; i++) {
-                ret = (long) (ret + calories[i] * Math.pow(2, i));
+                int x = in.nextInt();
+                if ((b + x >= s) && (b + x <= t)) {
+                    oranges++;
+                }
             }
-            out.print(ret);
+            out.println(apples);
+            out.print(oranges);
         }
 
     }
