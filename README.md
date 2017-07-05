@@ -6,5 +6,6 @@
   1- Breadth First Search: Shortest Reach
 ### Greedy Challenges
   1- Minimum Absolute Difference in an Array
+  2- Marc's Cakewalk
 ### Dynamic Programming Challenges
   1- The Coin Change Problem

@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.io.IOException;
 import java.io.BufferedReader;
+import java.util.Collections;
 import java.io.InputStreamReader;
 import java.io.InputStream;
 
@@ -29,13 +30,16 @@ public class Main {
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
             int n = in.nextInt();
-            int[] array = in.nextIntArray(n);
-            Arrays.sort(array);
-            int difference = Integer.MAX_VALUE;
-            for (int i = 1; i < n; i++) {
-                difference = Math.min(difference, array[i] - array[i - 1]);
+            Integer[] calories = new Integer[n];
+            for (int i = 0; i < n; i++) {
+                calories[i] = in.nextInt();
             }
-            out.print(difference);
+            Arrays.sort(calories, Collections.reverseOrder());
+            long ret = 0;
+            for (int i = 0; i < n; i++) {
+                ret = (long) (ret + calories[i] * Math.pow(2, i));
+            }
+            out.print(ret);
         }
 
     }
@@ -62,14 +66,6 @@ public class Main {
 
         public int nextInt() {
             return Integer.parseInt(next());
-        }
-
-        public int[] nextIntArray(int s) {
-            int[] in = new int[s];
-            for (int i = 0; i < s; i++) {
-                in[i] = nextInt();
-            }
-            return in;
         }
 
     }

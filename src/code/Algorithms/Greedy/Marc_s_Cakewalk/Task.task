@@ -1,0 +1,26 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+7 3
+1 3 2
+2 11
+1
+42 src/code/Algorithms/Greedy/Marc_s_Cakewalk
+8 -Xmx256M
+4 Main
+43 code.Algorithms.Greedy.Marc_s_Cakewalk.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.05
+15 Marc's Cakewalk
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1
