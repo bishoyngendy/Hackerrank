@@ -6,6 +6,8 @@
   1- Apple and Orange
   2- Electronics Shop
   3- Viral Advertising // Not yet
+  4- Beautiful Days at the Movies
+  5- Repeated String
 ### Bit Manipulation Challenges
   1- Maximizing XOR
 ### Strings Challenges

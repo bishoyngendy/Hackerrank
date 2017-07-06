@@ -1,2 +1,2 @@
-54 src/code/Algorithms/Strings/Mars_Exploration/Task.task
+60 src/code/Algorithms/Implementation/Repeated_String/Task.task
 0

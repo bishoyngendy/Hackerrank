@@ -1,0 +1,31 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 aba
+10
+1 7
+1
+1
+15 a
+1000000000000
+13 1000000000000
+1
+50 src/code/Algorithms/Implementation/Repeated_String
+8 -Xmx256M
+4 Main
+51 code.Algorithms.Implementation.Repeated_String.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.06
+15 Repeated String
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

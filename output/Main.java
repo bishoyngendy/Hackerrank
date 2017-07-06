@@ -27,15 +27,20 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            String pattern = "SOS";
             String s = in.next();
-            int count = s.length() / 3;
-            int ret = 0;
-            for (int i = 0; i < count; i++) {
-                for (int j = 0; j < pattern.length(); j++) {
-                    if (s.charAt(j + 3 * i) != pattern.charAt(j)) {
-                        ret++;
-                    }
+            long n = in.nextLong();
+            long counts = n / s.length();
+            int countInOneWord = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == 'a') {
+                    countInOneWord++;
+                }
+            }
+            long ret = countInOneWord * counts;
+            int difference = (int) (n - s.length() * counts);
+            for (int i = 0; i < difference; i++) {
+                if (s.charAt(i) == 'a') {
+                    ret++;
                 }
             }
             out.print(ret);
@@ -61,6 +66,10 @@ public class Main {
                 }
             }
             return tokenizer.nextToken();
+        }
+
+        public long nextLong() {
+            return Long.parseLong(next());
         }
 
     }
