@@ -1,2 +1,2 @@
-63 src/code/Algorithms/Greedy/Maximum_Perimeter_Triangle/Task.task
+54 src/code/Algorithms/Strings/Mars_Exploration/Task.task
 0

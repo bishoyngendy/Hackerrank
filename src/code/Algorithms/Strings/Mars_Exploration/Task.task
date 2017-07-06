@@ -1,0 +1,29 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+12 SOSSPSSQSSOR
+1 3
+1
+1
+6 SOSSOT
+1 1
+1
+44 src/code/Algorithms/Strings/Mars_Exploration
+16 -Xmx256m -Xss64m
+4 Main
+45 code.Algorithms.Strings.Mars_Exploration.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.06
+16 Mars Exploration
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

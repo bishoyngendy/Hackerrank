@@ -2,11 +2,9 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 import java.io.IOException;
 import java.io.BufferedReader;
-import java.util.Collections;
 import java.io.InputStreamReader;
 import java.io.InputStream;
 
@@ -29,23 +27,18 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            int n = in.nextInt();
-            Integer[] l = new Integer[n];
-            for (int i = 0; i < n; i++) {
-                l[i] = in.nextInt();
-            }
-            Arrays.sort(l, Collections.reverseOrder());
-            for (int i = 0; i < n; i++) {
-                for (int j = i + 1; j < n; j++) {
-                    for (int k = j + 1; k < n; k++) {
-                        if (l[i] < (l[j] + l[k])) {
-                            out.print(l[k] + " " + l[j] + " " + l[i]);
-                            return;
-                        }
+            String pattern = "SOS";
+            String s = in.next();
+            int count = s.length() / 3;
+            int ret = 0;
+            for (int i = 0; i < count; i++) {
+                for (int j = 0; j < pattern.length(); j++) {
+                    if (s.charAt(j + 3 * i) != pattern.charAt(j)) {
+                        ret++;
                     }
                 }
             }
-            out.print(-1);
+            out.print(ret);
         }
 
     }
@@ -68,10 +61,6 @@ public class Main {
                 }
             }
             return tokenizer.nextToken();
-        }
-
-        public int nextInt() {
-            return Integer.parseInt(next());
         }
 
     }
