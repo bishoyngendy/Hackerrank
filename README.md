@@ -12,5 +12,6 @@
   1- Minimum Absolute Difference in an Array
   2- Marc's Cakewalk
   3- Grid Challenge // Not yet
+  4- Maximum Perimeter Triangle
 ### Dynamic Programming Challenges
   1- The Coin Change Problem
