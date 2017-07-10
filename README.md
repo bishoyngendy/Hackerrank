@@ -11,6 +11,8 @@
   6- Bon Appétit
   7- Counting Valleys
   8- Minimum Distances
+  9- Birthday Chocolate
+  10- Jumping on the Clouds: Revisited
 ### Bit Manipulation Challenges
   1- Maximizing XOR
 ### Strings Challenges

@@ -1,0 +1,26 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+19 8 2
+0 0 1 0 0 1 1 0
+2 92
+1
+66 src/code/Algorithms/Implementation/Jumping_on_the_Clouds_Revisited
+16 -Xmx256m -Xss64m
+4 Main
+67 code.Algorithms.Implementation.Jumping_on_the_Clouds_Revisited.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.10
+32 Jumping on the Clouds: Revisited
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1
