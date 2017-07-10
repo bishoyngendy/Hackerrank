@@ -1,0 +1,29 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+7 0 3 4 2
+3 YES
+1
+1
+7 0 2 5 3
+2 NO
+1
+43 src/code/Algorithms/Implementation/Kangaroo
+16 -Xmx256m -Xss64m
+4 Main
+44 code.Algorithms.Implementation.Kangaroo.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.10
+8 Kangaroo
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

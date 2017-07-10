@@ -27,18 +27,23 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            int n = in.nextInt();
-            int[] a = in.nextIntArray(n);
+            int x1 = in.nextInt();
+            int v1 = in.nextInt();
+            int x2 = in.nextInt();
+            int v2 = in.nextInt();
+            String result = kangaroo(x1, v1, x2, v2);
+            out.print(result);
+        }
 
-            int ret = Integer.MAX_VALUE;
-            for (int i = 0; i < n; i++) {
-                for (int j = i + 1; j < n; j++) {
-                    if (a[i] == a[j]) {
-                        ret = Math.min(ret, j - i);
-                    }
-                }
+        private String kangaroo(int x1, int v1, int x2, int v2) {
+            if (v1 <= v2) {
+                return "NO";
             }
-            out.print(ret == Integer.MAX_VALUE ? -1 : ret);
+            if ((x2 - x1) % (v1 - v2) == 0) {
+                return "YES";
+            } else {
+                return "NO";
+            }
         }
 
     }
@@ -65,14 +70,6 @@ public class Main {
 
         public int nextInt() {
             return Integer.parseInt(next());
-        }
-
-        public int[] nextIntArray(int s) {
-            int[] in = new int[s];
-            for (int i = 0; i < s; i++) {
-                in[i] = nextInt();
-            }
-            return in;
         }
 
     }
