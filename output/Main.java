@@ -27,23 +27,25 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            String s = in.next();
-            long n = in.nextLong();
-            long counts = n / s.length();
-            int countInOneWord = 0;
-            for (int i = 0; i < s.length(); i++) {
-                if (s.charAt(i) == 'a') {
-                    countInOneWord++;
+            int n = in.nextInt();
+            int k = in.nextInt();
+            int[] ar = new int[n];
+            for (int ar_i = 0; ar_i < n; ar_i++) {
+                ar[ar_i] = in.nextInt();
+            }
+            int b = in.nextInt();
+            int totalActualCost = 0;
+            for (int i = 0; i < n; i++) {
+                if (i != k) {
+                    totalActualCost += ar[i];
                 }
             }
-            long ret = countInOneWord * counts;
-            int difference = (int) (n - s.length() * counts);
-            for (int i = 0; i < difference; i++) {
-                if (s.charAt(i) == 'a') {
-                    ret++;
-                }
+            totalActualCost /= 2;
+            if (totalActualCost == b) {
+                out.print("Bon Appetit");
+            } else {
+                out.print(b - totalActualCost);
             }
-            out.print(ret);
         }
 
     }
@@ -68,8 +70,8 @@ public class Main {
             return tokenizer.nextToken();
         }
 
-        public long nextLong() {
-            return Long.parseLong(next());
+        public int nextInt() {
+            return Integer.parseInt(next());
         }
 
     }

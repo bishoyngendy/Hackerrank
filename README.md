@@ -8,6 +8,7 @@
   3- Viral Advertising // Not yet
   4- Beautiful Days at the Movies
   5- Repeated String
+  6- Bon Appétit
 ### Bit Manipulation Challenges
   1- Maximizing XOR
 ### Strings Challenges
