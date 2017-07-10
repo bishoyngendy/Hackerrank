@@ -9,7 +9,8 @@
   4- Beautiful Days at the Movies
   5- Repeated String
   6- Bon Appétit
-  7- Counting Valleyss
+  7- Counting Valleys
+  8- Minimum Distances
 ### Bit Manipulation Challenges
   1- Maximizing XOR
 ### Strings Challenges

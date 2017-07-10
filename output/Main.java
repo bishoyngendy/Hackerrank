@@ -28,20 +28,17 @@ public class Main {
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
             int n = in.nextInt();
-            String s = in.next();
-            int currentLevel = 0;
-            int valleys = 0;
+            int[] a = in.nextIntArray(n);
+
+            int ret = Integer.MAX_VALUE;
             for (int i = 0; i < n; i++) {
-                if (s.charAt(i) == 'U') {
-                    currentLevel++;
-                } else {
-                    currentLevel--;
-                }
-                if (s.charAt(i) == 'U' && currentLevel == 0) {
-                    valleys++;
+                for (int j = i + 1; j < n; j++) {
+                    if (a[i] == a[j]) {
+                        ret = Math.min(ret, j - i);
+                    }
                 }
             }
-            out.print(valleys);
+            out.print(ret == Integer.MAX_VALUE ? -1 : ret);
         }
 
     }
@@ -68,6 +65,14 @@ public class Main {
 
         public int nextInt() {
             return Integer.parseInt(next());
+        }
+
+        public int[] nextIntArray(int s) {
+            int[] in = new int[s];
+            for (int i = 0; i < s; i++) {
+                in[i] = nextInt();
+            }
+            return in;
         }
 
     }
