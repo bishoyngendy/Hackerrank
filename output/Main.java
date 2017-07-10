@@ -27,18 +27,24 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            int n = in.nextInt();
-            int k = in.nextInt();
-            int c[] = in.nextIntArray(n);
-            int energy = 100;
-            int current = 0;
-            do {
-                int next = (current + k) % n;
-                energy--;
-                if (c[next] == 1) energy -= 2;
-                current = next;
-            } while (current != 0);
-            out.print(energy);
+            int testCases = in.nextInt();
+            String hackerrank = "hackerrank";
+            while (testCases-- != 0) {
+                String s = in.next();
+                int index = 0;
+                for (int i = 0; i < s.length(); i++) {
+                    if (s.charAt(i) == hackerrank.charAt(index)) {
+                        index++;
+                    }
+                    if (index == hackerrank.length()) {
+                        out.println("YES");
+                        break;
+                    } else if (i == s.length() - 1) {
+                        out.println("NO");
+                        break;
+                    }
+                }
+            }
         }
 
     }
@@ -65,14 +71,6 @@ public class Main {
 
         public int nextInt() {
             return Integer.parseInt(next());
-        }
-
-        public int[] nextIntArray(int s) {
-            int[] in = new int[s];
-            for (int i = 0; i < s; i++) {
-                in[i] = nextInt();
-            }
-            return in;
         }
 
     }

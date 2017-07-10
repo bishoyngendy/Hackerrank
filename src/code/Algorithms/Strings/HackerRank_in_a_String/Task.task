@@ -1,0 +1,28 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+32 2
+hereiamstackerrank
+hackerworld
+6 YES
+NO
+1
+50 src/code/Algorithms/Strings/HackerRank_in_a_String
+16 -Xmx256m -Xss64m
+4 Main
+51 code.Algorithms.Strings.HackerRank_in_a_String.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.10
+23 HackerRank in a String!
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

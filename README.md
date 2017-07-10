@@ -17,6 +17,7 @@
   1- Maximizing XOR
 ### Strings Challenges
   1- Mars Exploration
+  2- HackerRank in a String!
 ### Graph Theory Challenges
   1- Breadth First Search: Shortest Reach
 ### Greedy Challenges
