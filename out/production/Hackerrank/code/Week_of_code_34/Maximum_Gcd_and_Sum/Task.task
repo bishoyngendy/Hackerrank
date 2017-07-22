@@ -1,0 +1,21 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+0
+44 src/code/Week_of_code_34/Maximum_Gcd_and_Sum
+8 -Xmx256M
+4 Main
+45 code.Week_of_code_34.Maximum_Gcd_and_Sum.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.21
+61 Codeforces Round #424 (Div. 2, rated, based on VK Cup Finals)
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

@@ -1,0 +1,33 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+17 4
+1 2 1 1
+5 8 4 4
+3 Yes
+1
+1
+17 4
+1 2 1 1
+5 8 4 8
+2 No
+1
+76 src/code/Moody_s_Analytics_Women_in_Engineering_Hackathon/Strong_Correlation
+16 -Xmx256m -Xss64m
+4 Main
+77 code.Moody_s_Analytics_Women_in_Engineering_Hackathon.Strong_Correlation.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.22
+18 Strong Correlation
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

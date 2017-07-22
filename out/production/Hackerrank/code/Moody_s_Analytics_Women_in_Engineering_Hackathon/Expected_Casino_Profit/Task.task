@@ -1,0 +1,35 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 2 100 2
+200 50
+50 50
+5 -50.0
+1
+1
+33 4 100 1
+50 30
+120 20
+40 30
+150 20
+4 19.0
+1
+80 src/code/Moody_s_Analytics_Women_in_Engineering_Hackathon/Expected_Casino_Profit
+16 -Xmx256m -Xss64m
+4 Main
+81 code.Moody_s_Analytics_Women_in_Engineering_Hackathon.Expected_Casino_Profit.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.22
+22 Expected Casino Profit
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

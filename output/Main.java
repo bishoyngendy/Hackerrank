@@ -27,24 +27,33 @@ public class Main {
 
     static class Task {
         public void solve(int testNumber, InputReader in, PrintWriter out) {
-            int testCases = in.nextInt();
-            String hackerrank = "hackerrank";
-            while (testCases-- != 0) {
-                String s = in.next();
-                int index = 0;
-                for (int i = 0; i < s.length(); i++) {
-                    if (s.charAt(i) == hackerrank.charAt(index)) {
-                        index++;
-                    }
-                    if (index == hackerrank.length()) {
-                        out.println("YES");
-                        break;
-                    } else if (i == s.length() - 1) {
-                        out.println("NO");
-                        break;
-                    }
+            int n = in.nextInt();
+            int[] p = new int[n];
+            for (int p_i = 0; p_i < n; p_i++) {
+                p[p_i] = in.nextInt();
+            }
+            int[] d = new int[n];
+            for (int d_i = 0; d_i < n; d_i++) {
+                d[d_i] = in.nextInt();
+            }
+            String result = getSolution(n, p, d);
+            out.println(result);
+        }
+
+        private String getSolution(int n, int[] p, int[] d) {
+            for (int i = 1; i < n; i++) {
+                if (!isCorrelated(i, p, d)) {
+                    return "No";
                 }
             }
+            return "Yes";
+        }
+
+        private boolean isCorrelated(int i, int[] p, int[] d) {
+            if (p[i] < p[i - 1] && d[i] < d[i - 1]) return true;
+            if (p[i] > p[i - 1] && d[i] > d[i - 1]) return true;
+            if (p[i] == p[i - 1] && d[i] == d[i - 1]) return true;
+            return false;
         }
 
     }

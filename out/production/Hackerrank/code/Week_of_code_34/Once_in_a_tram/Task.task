@@ -1,0 +1,29 @@
+4 Task
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 555555
+6 555564
+1
+1
+6 000000
+6 001001
+1
+8 src/code
+8 -Xmx256M
+4 Main
+9 code.Task
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.07.21
+61 Codeforces Round #424 (Div. 2, rated, based on VK Cup Finals)
+1
+16 code.InputReader
+19 java.io.PrintWriter
+0
+1

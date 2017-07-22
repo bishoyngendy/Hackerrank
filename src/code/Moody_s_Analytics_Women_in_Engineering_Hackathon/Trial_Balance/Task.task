@@ -5,15 +5,15 @@
 8 STANDARD
 10 output.txt
 0
-8 src/code
+71 src/code/Moody_s_Analytics_Women_in_Engineering_Hackathon/Trial_Balance
 16 -Xmx256m -Xss64m
 4 Main
-9 code.Task
+72 code.Moody_s_Analytics_Women_in_Engineering_Hackathon.Trial_Balance.Task
 39 net.egork.chelper.checkers.TokenChecker
 0 
 0
-10 2017.07.09
-0 
+10 2017.07.22
+13 Trial Balance
 1
 16 code.InputReader
 19 java.io.PrintWriter
